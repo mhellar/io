@@ -32,7 +32,7 @@ void connect(void);
 
 /************************* Adafruit.io Setup *********************************/
 
-#define AIO_SERVER      "192.168.1.117"
+#define AIO_SERVER      "test.mosquitto.org"
 #define AIO_SERVERPORT  1883                   // use 8883 for SSL
 #define AIO_USERNAME    ""
 #define AIO_KEY         ""
@@ -74,7 +74,7 @@ void setup() {
 
   Serial.begin(115200);
 
-  Serial.println(F("Adafruit IO Example"));
+  Serial.println(F("MQTT Example"));
 
   // Connect to WiFi access point.
   Serial.println(); Serial.println();
@@ -121,7 +121,7 @@ void loop() {
   Serial.print(value);
   Serial.print("... ");
 
-  if (! button.publish(value))
+  if (! button.publish("hi from Mark"))
     Serial.println(F("Failed."));
   else
     Serial.println(F("Success!"));
@@ -134,7 +134,7 @@ void loop() {
 // connect to adafruit io via MQTT
 void connect() {
 
-  Serial.print(F("Connecting to Adafruit IO... "));
+  Serial.print(F("Connecting to MQTT Server... "));
 
   int8_t ret;
 
@@ -158,6 +158,6 @@ void connect() {
 
   }
 
-  Serial.println(F("Adafruit IO Connected!"));
+  Serial.println(F("MQTT Server Connected!"));
 
 }

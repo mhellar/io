@@ -32,10 +32,10 @@
         <div class="slides">
             <section data-background="img/72-points-mesh.svg">
                 <figure>
-                    <h2 class="intro">Huzzah</h2 class="intro">
-                        <h2 class="intro">Huzzah</h2 class="intro">
-                        <h2 class="intro">Huzzah</h2 class="intro">
-                        <h2 class="intro">Huzzah</h2 class="intro">                  
+                    <h2 class="intro">Introduction to Interactive Objects</h2 class="intro">
+                        <h2 class="intro">Introduction to Interactive Objects</h2 class="intro">
+                        <h2 class="intro">Introduction to Interactive Objects</h2 class="intro">
+                        <h2 class="intro">Introduction to Interactive Objects</h2 class="intro">                  
                     </figure>
                 </section>
                                     <section>
@@ -49,12 +49,85 @@
                                                                     <section>                    
 <h3>Houskeeping</h3>
 <ul>
-<li>Connect wifi to L: wnm499 L:arduinoclass</li>
-<li>Intstall This Driver: https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx</li>
-<li></li>
+<li>Connect to wifi</li>
+<li>Intstall This Driver: <a href="http://bit.ly/1FGNigh">http://bit.ly/1FGNigh</a></li>
+<li>Intstall Arduino: <a href="http://bit.ly/1R2xniM">http://bit.ly/1R2xniM</a></li>
+<li>Install nodeJS, <a href="http://www.nodejs.org">www.nodejs.org</a></li>
 
 </ul>
                 </section>
+
+                                <section>                    
+                        <h4>WHAT IS A MICROCONTOLLER:</h4>
+                        <p>Most of us know what a computer looks like. It usually has a keyboard, monitor, CPU (Central Processing Unit), printer, and a mouse. These types of computers, like the Mac or PC, are primarily designed to communicate (or “interface”) with humans.</p>
+                </section>
+
+                                <section>                    
+                        <h4>WHAT IS A MICROCONTOLLER:</h4>
+                        <p>There are also little computers all around us, running program and
+quietly doing calculations, not interacting with humans at all. These computers
+are in your car, on the Space Shuttle, in a toy, and maybe even
+inside your hairdryer.</p>
+                </section>
+                                  <section>                    
+                        <img src="img/m1.png" height="200">
+                        <img src="img/m2.png" height="200">
+                        <img src="img/m3.png" height="200">
+                        <img src="img/te.png" height="200">
+
+                </section>
+                
+
+                                <section>                    
+                        <h4>WHAT IS A MICROCONTOLLER:</h4>
+                        <p>We call these devices “microcontrollers”. Micro because they’re small, and
+controller because they “control” machines, gadgets, whatever
+!<br><br>
+They’re cool because, you can build a machine or device,
+write programs to control it and then let it work for you automatically. And they are cheap!</p>
+                </section>
+
+                                <section>
+
+                                        <h4>ARDUINO!</h4>
+<img src="img/ard.jpg" height="600">
+
+                </section>
+                <section>
+
+                                        <h4>WHAT IS ARDUINO:</h4>
+                        <p>Arduino is an open source physical computing platform based on a simple
+input/output (I/O) board and a development environment that implements
+the Processing language (www.processing.org).<br><br>
+Arduino can be used to develop standalone interactive objects
+or can be connected to software on your computer (such as Flash, Processing,
+NodeJS or Max/MSP).
+!</p>
+                </section>
+
+                                                                        <section>
+                        <h3>ARDUINO TERMS</h3>
+                        <ul>
+                        <li>“sketch” – a program you write to run on an Arduino board</li>
+                        <li>“pin” – an input or output connected to something. e.g. output to
+an LED, input from a knob.</li>
+                        <li>“digital” – value is either HIGH or LOW. (aka on/off, one/zero) e.g.
+switch state</li>
+                        <li>“analog” – value ranges, usually from 0-255. e.g. LED brightness,
+motor speed, etc.</li>
+                        </ul>
+                    </section>
+
+
+
+                                <section>
+
+                                        <h4>WHAT IS ARDUINO:</h4>
+                        <p>We wont be using the Arduino Hardware today, But we will be using it's programming environment.</p>
+                </section>
+
+
+
 
 <section>
 The ESP8266, the <a href="http://www.makeuseof.com/tag/meet-arduino-killer-esp8266/">Arduino Killer</a>
@@ -86,16 +159,17 @@ This project brings support for ESP8266 chip to the Arduino environment. It lets
                         <p>Go to Sketch->Include Libraries->Manage Libraries</p>
                         <br>
                         <p>Intall the ESP8266 and the Adafruit ESP66 Libraries</p>
+                        <p>http://arduino.esp8266.com/stable/package_esp8266com_index.json</p>
                     </section>
                                         <section>
                         <p><a href="https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/overview">Huzzah!</a></p>
                         
                     </section>
                     <section>
-                        <p>We have to Program the Huzzah in a special Way</p>
+                        <p>Programming the Huzzah</p>
                         <br>
                         <img src="http://thegioiic.com/upload/large/3389.jpg?1428929810">
-                        <p>We have to Program the Huzzah in a special Way</p>
+                        <p>Programming the Huzzah</p>
                     </section>
 
                     
@@ -103,7 +177,11 @@ This project brings support for ESP8266 chip to the Arduino environment. It lets
                         <p>We have to Program the Huzzah in a special Way</p>
                         <br>
                         <img src="img/connect.jpeg">
+                    </section>
+                    <section>
                         <p>We have to Program the Huzzah in a special Way</p>
+                        <br>
+                        <img src="img/connections.png">
                     </section>
                     <section>
                         <p>After connecting we have to hold down the Left button, press the right button and let go of the left</p>
@@ -130,14 +208,25 @@ This project brings support for ESP8266 chip to the Arduino environment. It lets
                                         </section>
                                         <section>
                         <p><a href="http://mqtt.org/">MQTT</a></p>
-                        
+                        <img src="img/mqtt.png">
+                   
                     </section>
                                         <section>
                         <p><a href="http://mosquitto.org/">Mosquitto</a></p>
+                        
+                    </section>
+
+                                                                <section>
+                        <p>Lets install the Adafruit MQTT Library</p>
+                        <img src="img/mqttlib.png"</img>
+                        <br>
                     </section>
                                             <section>
                         <p>Upload mqtt_button</p>
                         <br>
+                    </section>
+                                                                <section>
+                        <p><a href=" https://learn.adafruit.com/remote-control-with-the-huzzah-plus-adafruit-io/adafruit-io-setup">Blynk</a></p>
                     </section>
 
                                             <section>
